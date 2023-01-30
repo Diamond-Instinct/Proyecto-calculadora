@@ -134,7 +134,7 @@ footer {
     padding: 2rem;
     background: linear-gradient(rgb(105, 250, 129), #4384fd);
     margin-top: auto;
-    border: ridge 2px white;
+    border: ridge 2px black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
