@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Java</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <h1>Calculadora online</h1>
+</header>
+
+<div id="calculadora" class="contenedor-principal">
+
+    <h2>Tatito</h2>
+    <div class="pantalla" id="pantaya" ></div>
+
+    <div class="contenedor-teclas">
+        <button class="tecla" onclick="uno()" >1</button> 
+        <button class="tecla" onclick="dos()" >2</button>
+        <button class="tecla" onclick="tres()" >3</button>
+        <button class="tecla" onclick="cuatro()" >4</button>
+        <button class="tecla" onclick="cinco()" >5</button>
+        <button class="tecla" onclick="seis()" >6</button>
+        <button class="tecla" onclick="siete()" >7</button>
+        <button class="tecla" onclick="ocho()" >8</button>
+        <button class="tecla" onclick="nueve()" >9</button>
+        <button class="tecla" onclick="punto()" >.</button>
+        <button class="tecla" onclick="cero()" >0</button>
+        <button class="tecla igual" onclick="resultado()" >=</button>
+    </div>
+
+    <div class="contenedor-borrar">
+        <div class="tecla" onclick="borrar()" >Borrar</div>
+    </div>
+
+    <div class="contenedor-operaciones">
+        <div class="tecla" onclick="restar()" >-</div>
+        <div class="tecla" onclick="sumar()" >+</div>
+        <div class="tecla" onclick="multiplicar()" >x</div>
+        <div class="tecla" onclick="dividir()" >/</div>
+    </div>
+</div>
+
+<footer> Primer proyecto 2022 </footer>
+<script src="script.js"></script>
+</body>
+</html>

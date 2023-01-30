@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(135, 206, 250);
+    background: linear-gradient(blue, rgb(255, 122, 173));
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header { 
+    font-size: 2em;
+    text-align: center;
+    border: ridge 3px white;
+    margin-bottom: auto;
+    background-color: rgb(100, 148, 237);
+    background: linear-gradient(white, black);
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+.contenedor-principal {
+    --tonalidad-gris: radial-gradient(white 15%,gray);
+    border-radius: 25px;
+    width:300px;
+    height:400px;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    background: radial-gradient(gray , black 100%);
+}
+
+.contenedor-principal:hover {
+    box-shadow: 0px 8px 5px 5px black;
+    transition: box-shadow .4s ease;
+}
+
+.pantalla {
+    font-family: Calculator;
+    font-size: 40px;
+    border: ridge 2px gray;
+    border-radius: 10px;
+    width: 195px ;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50px;
+    padding: 7px;
+    background: linear-gradient(lime,rgb(10, 126, 10));
+    overflow-y: hidden;
+}
+
+.pantalla::-webkit-scrollbar {
+    background: darkslategray;
+}
+
+.pantalla::-webkit-scrollbar-thumb {
+    border: 1.5px black ridge;
+    border-radius: 10px;
+    background: rgba(211, 211, 211, 0.5);
+}
+
+.contenedor-borrar {
+    border: solid 3px gray;
+    border-radius: 10px;
+    background: var(--tonalidad-gris);
+    width: 65px;
+    padding: 5px 0 5px 4px;
+    position: absolute;
+    right: 15px;
+    top: 50px;
+}
+
+.contenedor-teclas {
+    border: ridge 3px gray;
+    border-radius: 10px;
+    background: var(--tonalidad-gris);
+    width: 187px;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 20px;
+    padding: 5px;
+}
+
+.tecla {
+    width: 60px;
+    border-radius: 20%;
+    text-align: center;
+    padding: 20px 0 ;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.tecla:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    outline: solid 2px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 5px 10px 2px rgba(0, 255, 255, 0.8)
+}
+
+.tecla:active {
+    background-color: black;
+}
+
+.igual {
+    outline: solid 2px white;
+}
+
+.contenedor-operaciones {
+    border: ridge 3px gray;
+    background: var(--tonalidad-gris);
+    border-radius: 10px;
+    width: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    position:absolute;
+    bottom: 20px;
+    right: 15px;
+    padding: 5px 0 5px 4px;
+}
+
+footer {
+    padding: 2rem;
+    background: linear-gradient(rgb(105, 250, 129), #4384fd);
+    margin-top: auto;
+    border: ridge 2px white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
