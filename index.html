@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Java</title>
+    <title>Calculadora</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="calculator 1.svg">
 </head>
 <body>
 <header>
-    <h1>Calculadora online</h1>
+    <h1>Calculadora</h1>
 </header>
 
 <div id="calculadora" class="contenedor-principal">
@@ -30,6 +32,7 @@
         <button class="tecla igual" onclick="resultado()" >=</button>
     </div>
 
+
     <div class="contenedor-borrar">
         <div class="tecla" onclick="borrar()" >Borrar</div>
     </div>
@@ -38,11 +41,18 @@
         <div class="tecla" onclick="restar()" >-</div>
         <div class="tecla" onclick="sumar()" >+</div>
         <div class="tecla" onclick="multiplicar()" >x</div>
-        <div class="tecla" onclick="dividir()" >/</div>
+        <div class="tecla" onclick="dividir()" >÷</div>
     </div>
 </div>
 
-<footer> Primer proyecto 2022 </footer>
+<footer> Primer proyecto 2022 
+    <div>
+        Hecho con:
+        <span id="html">HTML</span>
+        <span id="css">CSS</span>
+        <span id="javascript">JavaScript</span>
+    </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

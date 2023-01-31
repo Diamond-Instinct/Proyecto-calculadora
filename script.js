@@ -55,6 +55,7 @@ function multiplicar() {
 }
 
 function resultado() {
-    document.getElementById("pantaya").innerHTML = eval(document.getElementById("pantaya").innerHTML);
+    /*document.getElementById("pantaya").innerHTML = eval(document.getElementById("pantaya").innerHTML);*/
+    pantaya.innerHTML == "" ? pantaya.innerHTML = "insertar numeros" : pantaya.innerHTML = eval(document.getElementById("pantaya").innerHTML);
 }
 
