@@ -1,7 +1,7 @@
-// "use strict";
+"use strict"
 
 function uno() {
-    document.querySelector("#pantaya").innerHTML += "1";
+    document.getElementById("pantaya").innerHTML += "1";
 }
 function dos() {
     document.getElementById("pantaya").innerHTML += "2";
@@ -55,7 +55,7 @@ function multiplicar() {
 }
 
 function resultado() {
-    /*document.getElementById("pantaya").innerHTML = eval(document.getElementById("pantaya").innerHTML);*/
-    pantaya.innerHTML == "" ? pantaya.innerHTML = "insertar numeros" : pantaya.innerHTML = eval(document.getElementById("pantaya").innerHTML);
+    pantaya.innerHTML == "" ? pantaya.innerHTML = "insertar numeros"
+    : pantaya.innerHTML = eval(document.getElementById("pantaya").innerHTML);
 }
 
